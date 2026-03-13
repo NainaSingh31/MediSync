@@ -84,10 +84,6 @@ mongoose.connect('mongodb+srv://shubhamgupta9454666551:MediSync2023@cluster0.y2m
 const user = mongoose.model("user",userAuth);
 const patientData = mongoose.model("patientData",patientSchema);
 
-//routes
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend/build", "index.html"));
-});
 
 app.post("/signup",async (req,res)=>{
   console.log(req.body);
@@ -137,6 +133,12 @@ app.post("/patient-dashboard",async (req,res)=>{
   console.log(newPatient);
   res.status(200).json({code : 1,message : "success"});
 });
+
+//routes
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend/build", "index.html"));
+});
+
 
 //port
 const port = process.env.PORT || 8080 ;
