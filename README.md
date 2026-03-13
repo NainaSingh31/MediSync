@@ -40,33 +40,4 @@ Our product has two portals-
    
 7. Voila! the website is up and functioning on your local dev environment.
 
-# Our Team 
-- Frontend
-   + [Vaishali](https://www/github.com/arcVaishali)
-   + Aditi
-   + Avantika
-- Backend and Database
-   + [Shubham](https://github.com/skyisnotmylimit)
-   + [Abhinay](https://github.com/abj-32)
-- Machine Learning
-   + Ashish
-   + Abhinay
-   + [Vaishali](https://www/github.com/arcVaishali)
-- Design, Documentation, Presentation-
-   + Aditi
-   + Avantika
-   + [Vaishali](https://www/github.com/arcVaishali)
 
-<!--
-##### CHECKLIST- 
-- Frontend  
-  + [ ] Patient Dashboard
-  + [ ] Admin Dashboard
-  + [ ] etc
-  + [ ] etc 
-
-- Backend 
-
-- ML implementation
-
-  -->
