@@ -5,11 +5,11 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const uniqueID = require("short-unique-id");
-
+const path = require("path");
 const cors = require('cors');
 dotenv.config();
 const app = express();
-
+app.use(express.static(__dirname));
 // middlewares
 app.use(express.json());
 app.use(morgan("dev"));
@@ -86,9 +86,7 @@ const patientData = mongoose.model("patientData",patientSchema);
 
 //routes
 app.get("/", (req, res) => {
-  res.status(200).send({
-    message: "Server runninng",
-  });
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.post("/signup",async (req,res)=>{
