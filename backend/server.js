@@ -9,7 +9,7 @@ const path = require("path");
 const cors = require('cors');
 dotenv.config();
 const app = express();
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, "..")));
 // middlewares
 app.use(express.json());
 app.use(morgan("dev"));
@@ -86,7 +86,7 @@ const patientData = mongoose.model("patientData",patientSchema);
 
 //routes
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "../index.html"));
 });
 
 app.post("/signup",async (req,res)=>{
